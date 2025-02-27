@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
+        //using two pointers odd and even 
         if(head==NULL||head->next==NULL){
             return head;
         }
