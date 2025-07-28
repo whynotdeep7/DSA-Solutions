@@ -9,13 +9,13 @@ public:
             mpp[num]--;
        }
 
-        int duplicate  = 0,missing=0;
+        int dup= 0,miss=0;
 
-        for(auto a :mpp){
-            if(a.second == -1)duplicate = a.first;
-            if(a.second == 1)missing = a.first;
+        for(auto it :mpp){
+            if(it.second == -1)dup = it.first;
+            if(it.second == 1)miss = it.first;
         }
 
-        return {duplicate,missing};
+        return {dup,miss};
     }
 };
