@@ -4,9 +4,6 @@ public:
         vector<int> grbge;
         int n = nums.size();
         vector<int> nums_copy = nums;
-
-        sort(nums.begin(), nums.end());
-
         for (int i = 0; i < n; i++) {
             if (nums[i] <= 0) {
                 grbge.push_back(nums[i]);
@@ -19,7 +16,6 @@ public:
             mpp[i] = 1;
         }
 
-       //checking if there is -ve it skips
         for (auto &num :nums) {
             if (mpp.count(num)) {
                 mpp[num]--;
